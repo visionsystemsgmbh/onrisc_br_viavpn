@@ -1,0 +1,1 @@
+source "$BR2_EXTERNAL_ONRISC_VIAVPN_PATH/package/vsopenvpnd/Config.in"

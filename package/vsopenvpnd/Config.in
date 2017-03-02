@@ -1,0 +1,14 @@
+config BR2_PACKAGE_VSOPENVPND
+	bool "vsopenvpnd"
+	depends on BR2_TOOLCHAIN_EXTERNAL_GLIBC
+	select BR2_PACKAGE_LIBONRISC
+	select BR2_PACKAGE_ZLOG
+	select BR2_PACKAGE_LIBCURL
+	select BR2_PACKAGE_JSON_C
+	select BR2_PACKAGE_LIBXMLRPC
+	select BR2_PACKAGE_OPENVPN
+	help
+	  OpenVPN daemon for OnRISC devices.
+
+comment "vsopenvpnd needs an external toolchain w/ glibc"
+	depends on !BR2_TOOLCHAIN_USES_GLIBC
